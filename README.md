@@ -14,4 +14,11 @@ third parameter: Number of antennas in y direction
 fourth parameter: reference antenna
 fifth parameter:Declination
 Sixth parameter:Hour angle.
+phaseterm_w_general_color is to check the colors with respect to phases which helps to visualize the direction of arrival and phases to be adjusted instead of checking values:
+>> phaseterm_w_general_color('antennaloc32x32.dat',32,32,256,90,90);
+>> phaseterm_w_general_color('antennaloc32x32.dat',32,32,256,30,45);
+>> phaseterm_w_general_color('antennaloc32x32.dat',32,32,256,30,-45);
+>> phaseterm_w_general_color('antennaloc32x32.dat',32,32,256,-30,-45);
+>> phaseterm_w_general_color('antennaloc32x32.dat',32,32,256,-30,45);
+>> phaseterm_w_general_color('antennaloc32x32.dat',32,32,256,30,45);
 
