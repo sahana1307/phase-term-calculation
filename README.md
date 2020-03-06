@@ -7,3 +7,11 @@ For our purpose only phase information is required(w term) to adjust the phases 
 North pole and south pole document contains results for verifying if the source is at north and south pole, changing of hour angles or earth rotation has no effect on phase adjustments at latitude=0
 but at latitude=small change of +-10 degrees, phase term will change
 Generalized code for 8x8 and 3x3 array has been uploaded
+phaseterm_w_general('antennaloc88.dat',8,8,32,45,45)
+first parameter: .dat file of antenna location in terms of coordinates
+second parameter: Number of antennas in x direction
+third parameter: Number of antennas in y direction
+fourth parameter: reference antenna
+fifth parameter:Declination
+Sixth parameter:Hour angle.
+
