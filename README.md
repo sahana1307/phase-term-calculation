@@ -21,4 +21,5 @@ phaseterm_w_general_color is to check the colors with respect to phases which he
 >> phaseterm_w_general_color('antennaloc32x32.dat',32,32,256,-30,-45);
 >> phaseterm_w_general_color('antennaloc32x32.dat',32,32,256,-30,45);
 >> phaseterm_w_general_color('antennaloc32x32.dat',32,32,256,30,45);
+ptwgc_lat.m is the main program which calls function pgmtocallphasetilt.m to show the animation.
 
