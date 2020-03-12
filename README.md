@@ -23,4 +23,8 @@ phaseterm_w_general_color is to check the colors with respect to phases which he
 >> phaseterm_w_general_color('antennaloc32x32.dat',32,32,256,30,45);
 ptwgc_lat.m is the main program which calls function pgmtocallphasetilt.m to show the animation.
 pgmtocallphasetilt_fortext.m calls ptwgc_lat_fortest to generate the text file
-pgmtocallphasetilt_fortextreadv3 reads the text file and si
+pgmtocallphasetilt_fortextreadv3 reads the text file
+Please find the attached GIF and the program where the phase center has been fixed to center of 8x8 array.
+The coordinates passed as reference antenna from ptwgc_to_write_center.m is [4.5,4.5,0].
+ptwgc_call_center.m then uses this reference antenna coordinates and uses translation matrix to convert this east North and Up(enu) coordinates to latitude coordinates(xyz). Then Baseline is obtained by subtracting coordinates(Bxyz). These Baselines are then translated using translation matrix and converted to uvw plane.only w term is then written to the file which provides the phase information.
+This file is then read by pgmtocallphasetilt_fortext_readyv5.m and the resultant images are displayed for visually observing the phase tilt.These images are also captured by print option in code. Then using gimp(layers) through linux command window,gif(newanim.GIF) has been produced.
